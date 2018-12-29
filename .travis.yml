@@ -9,10 +9,10 @@ branches:
     - /^v?\d+\.\d+\.\d+(\w*\W*)*$/
 script:
   # the library (so you can import an use it on cf4dotnet projects)
-  - sed -i -e "s/000/${TRAVIS_BUILD_NUMBER^^}/g" $TRAVIS_BUILD_DIR/src/library/Cloudformation4dotNET.Library.csproj
-  - dotnet pack $TRAVIS_BUILD_DIR/src/library -c release -o $TRAVIS_BUILD_DIR/artifacts/library
+  - sed -i -e "s/000/${TRAVIS_BUILD_NUMBER^^}/g" $TRAVIS_BUILD_DIR/src/Cloudformation4dotNET.Library.csproj
+  - dotnet pack $TRAVIS_BUILD_DIR/src -c release -o $TRAVIS_BUILD_DIR/artifacts
 deploy:
   - provider: script
     skip_cleanup: true
-    script: dotnet nuget push $TRAVIS_BUILD_DIR/artifacts/library/NachoColl.Cloudformation4dotNET.Library.*.nupkg --api-key $NUGET_APIKEY --source https://www.nuget.org
+    script: dotnet nuget push $TRAVIS_BUILD_DIR/artifacts/NachoColl.Cloudformation4dotNET.Library.*.nupkg --api-key $NUGET_APIKEY --source https://www.nuget.org
     on: master 
