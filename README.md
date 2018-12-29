@@ -1,6 +1,8 @@
 [![Build Status](https://travis-ci.com/NachoColl/dotnet-cf4dotnet-library.svg?branch=master)](https://travis-ci.com/NachoColl/dotnet-cf4dotnet-library)
 
-Custom attributes you can use to define cf4dotnet resources.
+Custom attributes you can use to define [cf4dotnet](https://github.com/NachoColl/dotnet-cf4dotnet) resources. 
+
+**Cloudformation4dotNET** (cf4dotNet) is a tool you can use to automatically generate the AWS Cloudformation required to run your code on AWS.
 
 ## Available Properties
 
