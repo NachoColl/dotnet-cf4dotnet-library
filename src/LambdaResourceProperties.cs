@@ -8,6 +8,8 @@ namespace Cloudformation4dotNET.Lambda
 
         public int TimeoutInSeconds { get; set; } = 20;
 
+        public int Concurrency { get; set; } = -1;
+
         /// <summary>
         /// VPCSecurityGroupIdsRef and VPCSubnetIdsRef are required if you want your Lambda to access VPC.
         /// Setting those values will add:
