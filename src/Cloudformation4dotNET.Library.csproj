@@ -6,7 +6,7 @@
     <Description>Cloudformation4dotNET (cf4dotnet) library.</Description>
 
     <PackageId>NachoColl.Cloudformation4dotNET.Library</PackageId> 
-    <PackageVersion>1.0.000</PackageVersion>
+    <PackageVersion>2.0.000</PackageVersion>
     <PackageTags>dotnet;cf4dotnet;library</PackageTags>
   
     <TargetFramework>netstandard1.6</TargetFramework>
