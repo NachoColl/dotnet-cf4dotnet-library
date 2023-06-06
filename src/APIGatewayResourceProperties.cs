@@ -6,15 +6,16 @@ namespace Cloudformation4dotNET.APIGateway
     public class APIGatewayResourceProperties : Cloudformation4dotNET.Lambda.LambdaResourceProperties
     {
 
-        public string PathPart { get ; set; } = ""; 
+        public string PathPart { get; set; } = "";
 
-        public bool EnableCORS {get; set;} = false;
+        public bool EnableCORS { get; set; } = false;
 
-        public bool APIKeyRequired {get; set;} = false;
+        public bool APIKeyRequired { get; set; } = false;
 
-        public string Autorizer { get; set; } = "";
+        public string Authorizer { get; set; } = "";
 
-        public APIGatewayResourceProperties(string PathPart){
+        public APIGatewayResourceProperties(string PathPart)
+        {
             this.PathPart = PathPart;
         }
     }
